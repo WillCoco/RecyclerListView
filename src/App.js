@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import RecyclerListView from './components/RecyclerListView';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{position: 'relative', top: '100px'}}>
+      <RecyclerListView
+        // data={[{name: "test1", title: 'title1'}]}
+        height={50}
+        rowRender={(data, index) => {
+          return (
+            <div style={{height: '50px', border: '1px solid', boxSizing: 'border-box'}}>
+              <span>{data.name}</span>
+              <span>{data.title}</span>
+            </div>
+          )
+        }}
+      />
+      <div>1231</div>
     </div>
   );
 }
