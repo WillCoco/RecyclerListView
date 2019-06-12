@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b1bf05f-0c83-4778-9919-fbc4ced657b3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/RecyclerListView/index.js" afterPath="$PROJECT_DIR$/src/components/RecyclerListView/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+              <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -30,8 +31,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/RecyclerListView/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+            <state relative-caret-position="370">
+              <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -92,6 +93,7 @@
     <findStrings>
       <find>maxSum</find>
       <find>currentIndex</find>
+      <find>sum</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,9 +103,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/components/RecyclerListView/Scroller.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/RecyclerListView/index.js" />
       </list>
     </option>
@@ -120,8 +122,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="288" />
-    <option name="y" value="10" />
+    <option name="x" value="236" />
     <option name="width" value="1541" />
     <option name="height" value="1047" />
   </component>
@@ -220,15 +221,15 @@
       <workItem from="1559994875369" duration="11641000" />
       <workItem from="1560042100867" duration="8042000" />
       <workItem from="1560262562650" duration="7770000" />
-      <workItem from="1560348574984" duration="1724000" />
+      <workItem from="1560348574984" duration="8570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50131000" />
+    <option name="totallyTimeSpent" value="56977000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="288" y="10" width="1541" height="1047" extended-state="0" />
+    <frame x="236" y="0" width="1541" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20852458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -484,15 +485,15 @@
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/RecyclerListView/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+        <state relative-caret-position="370">
+          <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="34" />
           <folding />
         </state>
       </provider>

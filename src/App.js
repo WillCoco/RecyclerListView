@@ -13,6 +13,7 @@ function App() {
             <div style={{height: '50px', border: '1px solid', boxSizing: 'border-box'}}>
               <span>{data.name}</span>
               <span>{data.title}</span>
+              <span>...{index}</span>
             </div>
           )
         }}
