@@ -4,18 +4,8 @@ import Scroller from './Scroller';
 
 export default (props) => {
   const {
-    // data = [
-    //   {name: 'asdf1', title: '11111'},
-    //   {name: 'asdf2', title: '22222'},
-    //   {name: 'asdf3', title: '33333'},
-    //   {name: 'asdf4', title: '44444'},
-    //   {name: 'asdf5', title: '55555'},
-    //   {name: 'asdf6', title: '66666'},
-    //   {name: 'asdf7', title: '77777'},
-    //   {name: 'asdf8', title: '88888'},
-    // ],
-    data = Array.from(new Array(100)).map((a, index) => ({name: 'asdf1---', title: index})),
-    height = 10,
+    data = Array.from(new Array(1000)).map((a, index) => ({name: 'asdf1---', title: index})),
+    height = 100,
     initIndex = 0,
     bound = 2, // 上/下超出格数
   } = props;
@@ -27,7 +17,7 @@ export default (props) => {
   useEffect(() => {
     const { clientHeight, clientWidth } = scroller.current;
 
-    const maxSum = Math.ceil((clientHeight / height) + bound);
+    const maxSum = Math.ceil((clientHeight / height) + bound * 2);
 
     console.log(sum, 'sum');
     console.log(Math.min(maxSum, data.length), 'maxSum');
@@ -38,16 +28,14 @@ export default (props) => {
   console.log(currentIndex, 'currentIndex');
 
   const handleScroll = (e) => {
-    if (e.target.scrollTop && currentIndex !== Math.floor(e.target.scrollTop / 50)){
-      // console.log('setCurrentIndex(', Math.floor(e.target.scrollTop / 50))
-      console.log(e.target.scrollTop, 199191919)
-      setCurrentIndex(Math.min(Math.floor(e.target.scrollTop / 50), data.length - sum));
+    if (e.target.scrollTop && currentIndex !== Math.floor(e.target.scrollTop / height)){
+      setCurrentIndex(Math.min(Math.floor(e.target.scrollTop / height), data.length - sum));
     }
   };
 
   return (
    <div
-     style={{display: 'flex', flex: 1, height: '200px', border: '1px solid red', overflow: 'scroll', scrollBehavior: 'smooth'}}
+     style={{display: 'flex', flex: 1, height: '400px', border: '1px solid red', overflow: 'scroll', scrollBehavior: 'smooth'}}
      ref={scroller}
      onScroll={handleScroll}
    >
@@ -55,8 +43,8 @@ export default (props) => {
        {
          Array.from(new Array(sum)).map((item, index) => {
            return (
-             <div key={index}>
-               <img style={{width: 100, height: 100}} src='http://pic18.nipic.com/20120204/8339340_144203764154_2.jpg' alt=""/>
+             <div key={index} style={{display: 'flex', flexDirection: 'row'}}>
+               <img style={{width: height, height: height}} src='http://pic18.nipic.com/20120204/8339340_144203764154_2.jpg' alt=""/>
                { props.rowRender(data[currentIndex + index], index) }
              </div>
            )
